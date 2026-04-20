@@ -1,6 +1,5 @@
 # SDN-Based Access Control System
 
-> **Course:** Computer Networks — UE24CS252B  
 > **Stack:** Python 3 · POX3 Controller · Mininet · OpenFlow 1.0 · Open vSwitch
 
 ---
