@@ -69,7 +69,6 @@ Make sure the following are installed on your machine (Ubuntu/Debian recommended
 ```bash
 git clone https://github.com/noxrepo/pox.git
 cd pox
-git checkout dart        # dart branch supports Python 3
 ```
 
 Copy `access_control.py` into the `ext/` directory inside your POX folder:
@@ -123,7 +122,6 @@ You can run manual tests here, for example:
 mininet> h1 ping h2                    # should succeed
 mininet> h4 ping h1                    # should fail (100% packet loss)
 mininet> h1 iperf -c h3               # throughput test between whitelisted hosts
-mininet> sh ovs-ofctl dump-flows s1    # inspect flow table
 mininet> exit                          # shut down the network
 ```
 
@@ -153,7 +151,7 @@ INFO:access_control:FORWARD  00:00:00:00:00:01 → 00:00:00:00:00:02  via port 2
 
 **Screenshot:**
 
-![Test Scenario 1 - Allowed Communication](screenshots/scenario1_allowed.png)
+<img width="655" height="215" alt="SDN1" src="https://github.com/user-attachments/assets/decddca0-8d00-4a56-9d27-8b3c92d3f2d3" />
 
 ---
 
@@ -175,7 +173,7 @@ INFO:access_control:BLOCKED  src=00:00:00:00:00:04 (not whitelisted) — install
 
 **Screenshot:**
 
-![Test Scenario 2 - Unauthorized Access Blocked](screenshots/scenario2_blocked.png)
+<img width="786" height="231" alt="SDN2" src="https://github.com/user-attachments/assets/e5031ecb-a250-415d-b2e3-06bb6ce9783b" />
 
 ---
 
@@ -196,7 +194,7 @@ TCP window size: 85.3 KByte (default)
 
 **Screenshot:**
 
-![Test Scenario 3 - iperf Throughput](screenshots/scenario3_iperf.png)
+<img width="986" height="392" alt="SDN3" src="https://github.com/user-attachments/assets/8c4a3621-3c29-4824-9e40-ed5b70dca185" />
 
 ---
 
@@ -211,7 +209,7 @@ Confirms that previously installed forwarding flows remain valid and the whiteli
 
 **Screenshot:**
 
-![Regression Test - Policy Consistency](screenshots/regression_test.png)
+<img width="656" height="183" alt="SDN4" src="https://github.com/user-attachments/assets/dfbc79c7-0ad1-4aa6-8811-e86ebd5960bf" />
 
 ---
 
@@ -223,7 +221,7 @@ Confirms that previously installed forwarding flows remain valid and the whiteli
 
 **Screenshot:**
 
-![Flow Table Dump](screenshots/flow_table_dump.png)
+<img width="1850" height="508" alt="SDN5" src="https://github.com/user-attachments/assets/93d42ca2-30cc-4557-b075-a84a1405b51c" />
 
 ---
 
